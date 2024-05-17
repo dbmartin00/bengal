@@ -1,0 +1,140 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    ViewData["Username"] = User.Identity.Name;
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    .quote-container {
+        background-color: #fff;
+        margin: 2em auto;
+        padding: 2em;
+        border-radius: 8px;
+        max-width: 750px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+    }
+
+    .vote-container {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        gap: 0em;
+    }
+
+    .vote-container .btn {
+        background-color: #ffffff; /* White background */
+        border-color: #ffffff; /* Light blue border */
+        color: #333
+    }
+
+    .vote-container .btn:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .vote-container .btn:hover {
+        background-color: #F0F0F0; /* Light gray background */
+    }
+
+    .greeting-content {
+        font-family: 'Georgia', serif; /* More artistic font */
+    }
+
+    .quote-content p.quote {
+        font-size: 2em; /* Bigger font size */
+        font-family: 'Georgia', serif; /* More artistic font */
+        font-style: italic; /* Italic font */
+        color: #4EC2F7; /* Medium-light blue color */
+    }
+
+    .quote-content {
+        position: relative;
+    }
+
+    .button-container {
+        position: absolute;
+        bottom: 10px; /* Adjust as needed */
+        right: 10px; /* Adjust as needed */
+    }
+
+    .float-button {
+        /* Additional button styles if needed */
+        padding: 5px 5px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .float-button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<script>
+    function quoteClicked(button) {
+        fetch('@Url.Page("/Index", "NextQuote")', {
+            method: 'GET'
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('New Quote:', data);
+            // Update the quote on the page
+            document.querySelector('.quote').textContent = `"${data.message}"`;
+            document.querySelector('.quote + p b').textContent = data.author;
+        })
+        .catch(error => console.error('Error:', error));
+    }
+
+    function heartClicked(button) {
+        var icon = button.querySelector('i');
+        icon.classList.toggle('far');
+        icon.classList.toggle('fas');
+
+        fetch('@Url.Page("/Index", "HeartQuote")', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Heart clicked response:', data);
+        })
+        .catch(error => console.error('Error:', error));
+    }
+</script>
+
+<div class="quote-container">
+    <div class="quote-content">
+        @* <b>@ViewData["Username"]</b> *@
+        <h3 class="greeting-content">Happy journeys fellow traveller, hope this makes your day!</h3>
+        <br />
+        <p class="quote">"@Model.Quote.Message"</p>
+        <p>- <b>@Model.Quote.Author</b></p>
+        <div class="button-container">
+            <button class="float-button" onclick="quoteClicked(this)">@Model.QuoteButton.Label</button>
+        </div>
+    </div>
+
+    <div class="vote-container">
+        <button class="btn btn-primary" onclick="heartClicked(this)">
+            <i class="far fa-heart"></i> <!-- Heart icon -->
+        </button>
+    </div>
+
+    <form action="/" method="post">
+        @Html.AntiForgeryToken()
+    </form>
+</div>

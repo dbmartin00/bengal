@@ -1,0 +1,254 @@
+[
+  {
+    "id": "/subscriptions/3633ff9f-6cec-4234-b80f-3f2404ffc597/resourceGroups/rg-mars",
+    "location": "eastus2",
+    "managedBy": null,
+    "name": "rg-mars",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": {
+      "azd-env-name": "mars"
+    },
+    "type": "Microsoft.Resources/resourceGroups"
+  },
+  {
+    "id": "/subscriptions/3633ff9f-6cec-4234-b80f-3f2404ffc597/resourceGroups/rg-split",
+    "location": "eastus2",
+    "managedBy": null,
+    "name": "rg-split",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": {
+      "azd-env-name": "split"
+    },
+    "type": "Microsoft.Resources/resourceGroups"
+  },
+  {
+    "id": "/subscriptions/3633ff9f-6cec-4234-b80f-3f2404ffc597/resourceGroups/rg-split-csharp",
+    "location": "eastus2",
+    "managedBy": null,
+    "name": "rg-split-csharp",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": {
+      "azd-env-name": "split-csharp"
+    },
+    "type": "Microsoft.Resources/resourceGroups"
+  },
+  {
+    "id": "/subscriptions/3633ff9f-6cec-4234-b80f-3f2404ffc597/resourceGroups/rg-split-csharp-demo",
+    "location": "eastus2",
+    "managedBy": null,
+    "name": "rg-split-csharp-demo",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": {
+      "azd-env-name": "split-csharp-demo"
+    },
+    "type": "Microsoft.Resources/resourceGroups"
+  },
+  {
+    "id": "/subscriptions/3633ff9f-6cec-4234-b80f-3f2404ffc597/resourceGroups/rg-split-demo",
+    "location": "eastus2",
+    "managedBy": null,
+    "name": "rg-split-demo",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": {
+      "azd-env-name": "split-demo"
+    },
+    "type": "Microsoft.Resources/resourceGroups"
+  },
+  {
+    "id": "/subscriptions/3633ff9f-6cec-4234-b80f-3f2404ffc597/resourceGroups/rg-split-demo-glowing-capybara",
+    "location": "eastus2",
+    "managedBy": null,
+    "name": "rg-split-demo-glowing-capybara",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": {
+      "azd-env-name": "split-demo-glowing-capybara"
+    },
+    "type": "Microsoft.Resources/resourceGroups"
+  },
+  {
+    "id": "/subscriptions/3633ff9f-6cec-4234-b80f-3f2404ffc597/resourceGroups/rg-split-demo-space-fiesta",
+    "location": "eastus2",
+    "managedBy": null,
+    "name": "rg-split-demo-space-fiesta",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": {
+      "azd-env-name": "split-demo-space-fiesta"
+    },
+    "type": "Microsoft.Resources/resourceGroups"
+  },
+  {
+    "id": "/subscriptions/3633ff9f-6cec-4234-b80f-3f2404ffc597/resourceGroups/rg-split-demo-opulent-bear",
+    "location": "eastus2",
+    "managedBy": null,
+    "name": "rg-split-demo-opulent-bear",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": {
+      "azd-env-name": "split-demo-opulent-bear"
+    },
+    "type": "Microsoft.Resources/resourceGroups"
+  },
+  {
+    "id": "/subscriptions/3633ff9f-6cec-4234-b80f-3f2404ffc597/resourceGroups/rg-split-demo-verbose-giggle",
+    "location": "eastus2",
+    "managedBy": null,
+    "name": "rg-split-demo-verbose-giggle",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": {
+      "azd-env-name": "split-demo-verbose-giggle"
+    },
+    "type": "Microsoft.Resources/resourceGroups"
+  },
+  {
+    "id": "/subscriptions/3633ff9f-6cec-4234-b80f-3f2404ffc597/resourceGroups/rg-split-bear-space-waddle",
+    "location": "eastus2",
+    "managedBy": null,
+    "name": "rg-split-bear-space-waddle",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": {
+      "azd-env-name": "split-bear-space-waddle"
+    },
+    "type": "Microsoft.Resources/resourceGroups"
+  },
+  {
+    "id": "/subscriptions/3633ff9f-6cec-4234-b80f-3f2404ffc597/resourceGroups/rg-split-psychic-dollop-bear",
+    "location": "eastus2",
+    "managedBy": null,
+    "name": "rg-split-psychic-dollop-bear",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": {
+      "azd-env-name": "split-psychic-dollop-bear"
+    },
+    "type": "Microsoft.Resources/resourceGroups"
+  },
+  {
+    "id": "/subscriptions/3633ff9f-6cec-4234-b80f-3f2404ffc597/resourceGroups/rg-split-demo-fantastic-space",
+    "location": "eastus2",
+    "managedBy": null,
+    "name": "rg-split-demo-fantastic-space",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": {
+      "azd-env-name": "split-demo-fantastic-space"
+    },
+    "type": "Microsoft.Resources/resourceGroups"
+  },
+  {
+    "id": "/subscriptions/3633ff9f-6cec-4234-b80f-3f2404ffc597/resourceGroups/rg-split-demo-turbo-space",
+    "location": "eastus2",
+    "managedBy": null,
+    "name": "rg-split-demo-turbo-space",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": {
+      "azd-env-name": "split-demo-turbo-space"
+    },
+    "type": "Microsoft.Resources/resourceGroups"
+  },
+  {
+    "id": "/subscriptions/3633ff9f-6cec-4234-b80f-3f2404ffc597/resourceGroups/rg-split-demo-bookish-space",
+    "location": "eastus2",
+    "managedBy": null,
+    "name": "rg-split-demo-bookish-space",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": {
+      "azd-env-name": "split-demo-bookish-space"
+    },
+    "type": "Microsoft.Resources/resourceGroups"
+  },
+  {
+    "id": "/subscriptions/3633ff9f-6cec-4234-b80f-3f2404ffc597/resourceGroups/rg-split-demo-expert-space",
+    "location": "eastus2",
+    "managedBy": null,
+    "name": "rg-split-demo-expert-space",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": {
+      "azd-env-name": "split-demo-expert-space"
+    },
+    "type": "Microsoft.Resources/resourceGroups"
+  },
+  {
+    "id": "/subscriptions/3633ff9f-6cec-4234-b80f-3f2404ffc597/resourceGroups/dbmdemo2",
+    "location": "eastus",
+    "managedBy": null,
+    "name": "dbmdemo2",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": null,
+    "type": "Microsoft.Resources/resourceGroups"
+  },
+  {
+    "id": "/subscriptions/3633ff9f-6cec-4234-b80f-3f2404ffc597/resourceGroups/rg-demo",
+    "location": "eastus",
+    "managedBy": null,
+    "name": "rg-demo",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": {
+      "azd-env-name": "demo"
+    },
+    "type": "Microsoft.Resources/resourceGroups"
+  },
+  {
+    "id": "/subscriptions/3633ff9f-6cec-4234-b80f-3f2404ffc597/resourceGroups/dbm-evaluator-demo_group",
+    "location": "eastus",
+    "managedBy": null,
+    "name": "dbm-evaluator-demo_group",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": null,
+    "type": "Microsoft.Resources/resourceGroups"
+  },
+  {
+    "id": "/subscriptions/3633ff9f-6cec-4234-b80f-3f2404ffc597/resourceGroups/NetworkWatcherRG",
+    "location": "eastus",
+    "managedBy": null,
+    "name": "NetworkWatcherRG",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": null,
+    "type": "Microsoft.Resources/resourceGroups"
+  },
+  {
+    "id": "/subscriptions/3633ff9f-6cec-4234-b80f-3f2404ffc597/resourceGroups/rg-splitappconfig-demo",
+    "location": "eastus",
+    "managedBy": null,
+    "name": "rg-splitappconfig-demo",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": null,
+    "type": "Microsoft.Resources/resourceGroups"
+  }
+]
